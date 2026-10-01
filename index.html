@@ -1,0 +1,1511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gilded Room Theory — Interior Design, Architecture & the Art of Living</title>
+    <meta name="description" content="Independent editorial publication exploring interior design, architecture, materials, space planning, lighting, and the stories behind enduring rooms.">
+    <meta property="og:title" content="Gilded Room Theory — Interior Design & Architecture Journal">
+    <meta property="og:description" content="Long-form essays and practical guides on residential architecture, modern interiors, materials, lighting, and the art of making rooms that last.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gildedroomtheory.com/">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80">
+    <link rel="canonical" href="https://gildedroomtheory.com/">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "Gilded Room Theory",
+        "description": "An independent editorial publication on interior design, architecture, and the art of living well within built space.",
+        "url": "https://gildedroomtheory.com/",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Gilded Room Theory"
+        }
+    }
+    </script>
+    <style>
+        /* ——— RESET & BASE ——— */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --ink: #1a1a1a;
+            --ink-soft: #3d3d3d;
+            --ink-muted: #6b6b6b;
+            --paper: #fcfaf7;
+            --paper-warm: #f6f2ec;
+            --paper-card: #ffffff;
+            --rule: #e2ddd6;
+            --rule-light: #ece8e2;
+            --accent: #8b6f4c;
+            --accent-soft: #b39b7c;
+            --serif: 'Georgia', 'Times New Roman', 'Palatino Linotype', 'Book Antiqua', serif;
+            --sans: 'Helvetica Neue', 'Segoe UI', Arial, sans-serif;
+            --measure: 720px;
+            --sidebar: 300px;
+            --gap: 48px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--serif);
+            background: var(--paper);
+            color: var(--ink);
+            line-height: 1.7;
+            font-size: 17px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            color: var(--ink);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+
+        a:hover {
+            border-bottom-color: var(--accent);
+        }
+
+        h1, h2, h3, h4 {
+            font-family: var(--serif);
+            font-weight: 700;
+            line-height: 1.25;
+            letter-spacing: -0.01em;
+        }
+
+        h1 {
+            font-size: 2.6rem;
+            margin-bottom: 0.5rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin: 2.5rem 0 1rem;
+        }
+
+        h3 {
+            font-size: 1.35rem;
+            margin: 2rem 0 0.75rem;
+        }
+
+        h4 {
+            font-size: 1.1rem;
+            margin: 1.5rem 0 0.5rem;
+        }
+
+        p {
+            margin-bottom: 1.25rem;
+        }
+
+        blockquote {
+            border-left: 3px solid var(--accent-soft);
+            padding-left: 1.5rem;
+            margin: 2rem 0;
+            font-style: italic;
+            color: var(--ink-soft);
+        }
+
+        ul, ol {
+            margin-bottom: 1.25rem;
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.4rem;
+        }
+
+        /* ——— UTILITY ——— */
+        .container {
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: 0 28px;
+        }
+
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+            border: 0;
+        }
+
+        /* ——— HEADER ——— */
+        .site-header {
+            border-bottom: 1px solid var(--rule);
+            background: var(--paper);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: baseline;
+            gap: 6px;
+        }
+
+        .logo-mark {
+            font-family: var(--serif);
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            color: var(--ink);
+            border: none;
+        }
+
+        .logo-mark span {
+            color: var(--accent);
+            font-style: italic;
+        }
+
+        .logo-sub {
+            font-family: var(--sans);
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 0.18em;
+            color: var(--ink-muted);
+            display: block;
+            margin-top: 2px;
+        }
+
+        .nav-main {
+            display: flex;
+            gap: 28px;
+            font-family: var(--sans);
+            font-size: 0.82rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--ink-soft);
+        }
+
+        .nav-main a {
+            border-bottom: none;
+            padding-bottom: 2px;
+        }
+
+        .nav-main a:hover {
+            border-bottom: 1px solid var(--accent);
+            color: var(--ink);
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .search-toggle {
+            background: none;
+            border: 1px solid var(--rule);
+            padding: 8px 14px;
+            font-family: var(--sans);
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            cursor: pointer;
+            color: var(--ink-soft);
+            transition: all 0.2s;
+        }
+
+        .search-toggle:hover {
+            border-color: var(--accent);
+            color: var(--ink);
+        }
+
+        /* Search overlay */
+        .search-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(252, 250, 247, 0.98);
+            z-index: 200;
+            padding: 80px 28px;
+            overflow-y: auto;
+        }
+
+        .search-overlay.active {
+            display: block;
+        }
+
+        .search-overlay-inner {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .search-close {
+            float: right;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--ink-muted);
+            font-family: var(--sans);
+        }
+
+        .search-input-lg {
+            width: 100%;
+            padding: 18px 0;
+            font-family: var(--serif);
+            font-size: 1.6rem;
+            border: none;
+            border-bottom: 2px solid var(--rule);
+            background: transparent;
+            outline: none;
+            color: var(--ink);
+            margin-bottom: 32px;
+        }
+
+        .search-input-lg:focus {
+            border-bottom-color: var(--accent);
+        }
+
+        .search-results-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .search-results-list li {
+            padding: 14px 0;
+            border-bottom: 1px solid var(--rule-light);
+        }
+
+        .search-results-list a {
+            font-size: 1.05rem;
+            border: none;
+            display: block;
+        }
+
+        .search-results-list a:hover {
+            color: var(--accent);
+        }
+
+        .search-results-list .result-meta {
+            font-family: var(--sans);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--ink-muted);
+            margin-top: 4px;
+        }
+
+        /* ——— TICKER / KICKER BAR ——— */
+        .ticker-bar {
+            background: var(--paper-warm);
+            border-bottom: 1px solid var(--rule-light);
+            padding: 10px 0;
+            font-family: var(--sans);
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--ink-muted);
+        }
+
+        .ticker-bar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* ——— MAIN LAYOUT ——— */
+        .layout-grid {
+            display: grid;
+            grid-template-columns: 1fr var(--sidebar);
+            gap: var(--gap);
+            padding: 48px 0 64px;
+            align-items: start;
+        }
+
+        /* ——— FEATURED ——— */
+        .featured-article {
+            margin-bottom: 56px;
+            padding-bottom: 48px;
+            border-bottom: 1px solid var(--rule);
+        }
+
+        .featured-article .article-category {
+            font-family: var(--sans);
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--accent);
+            margin-bottom: 10px;
+        }
+
+        .featured-article h2 {
+            font-size: 2.2rem;
+            margin: 0 0 14px;
+            line-height: 1.2;
+        }
+
+        .featured-article h2 a {
+            border-bottom: none;
+        }
+
+        .featured-article h2 a:hover {
+            color: var(--accent);
+        }
+
+        .featured-article .article-excerpt {
+            font-size: 1.05rem;
+            color: var(--ink-soft);
+            margin-bottom: 16px;
+            max-width: 680px;
+        }
+
+        .featured-article .article-meta {
+            font-family: var(--sans);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--ink-muted);
+            display: flex;
+            gap: 18px;
+            align-items: center;
+            margin-bottom: 24px;
+        }
+
+        .featured-article .article-meta .read-time {
+            color: var(--accent-soft);
+        }
+
+        .featured-image {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+            margin-bottom: 24px;
+        }
+
+        .featured-body {
+            max-width: var(--measure);
+        }
+
+        .featured-body p {
+            font-size: 1.02rem;
+        }
+
+        /* ——— ARTICLE CARDS ——— */
+        .section-label {
+            font-family: var(--sans);
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 0.16em;
+            color: var(--ink-muted);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--rule);
+        }
+
+        .article-list {
+            display: flex;
+            flex-direction: column;
+            gap: 36px;
+        }
+
+        .article-card {
+            padding-bottom: 32px;
+            border-bottom: 1px solid var(--rule-light);
+        }
+
+        .article-card:last-child {
+            border-bottom: none;
+        }
+
+        .article-card .article-category {
+            font-family: var(--sans);
+            font-size: 0.68rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--accent);
+            margin-bottom: 8px;
+        }
+
+        .article-card h3 {
+            font-size: 1.4rem;
+            margin: 0 0 10px;
+            line-height: 1.3;
+        }
+
+        .article-card h3 a {
+            border-bottom: none;
+        }
+
+        .article-card h3 a:hover {
+            color: var(--accent);
+        }
+
+        .article-card .article-excerpt {
+            font-size: 0.96rem;
+            color: var(--ink-soft);
+            margin-bottom: 10px;
+            max-width: 640px;
+        }
+
+        .article-card .article-meta {
+            font-family: var(--sans);
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--ink-muted);
+            display: flex;
+            gap: 16px;
+        }
+
+        .article-card .article-meta .read-time {
+            color: var(--accent-soft);
+        }
+
+        /* ——— FULL ARTICLE (long-form) ——— */
+        .full-article {
+            margin-top: 64px;
+            padding-top: 48px;
+            border-top: 2px solid var(--ink);
+        }
+
+        .full-article .article-header {
+            margin-bottom: 40px;
+        }
+
+        .full-article .article-header h2 {
+            font-size: 2.4rem;
+            margin: 0 0 16px;
+            line-height: 1.2;
+        }
+
+        .full-article .article-byline {
+            font-family: var(--sans);
+            font-size: 0.8rem;
+            color: var(--ink-muted);
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+            margin-bottom: 8px;
+        }
+
+        .full-article .article-byline strong {
+            color: var(--ink-soft);
+            font-weight: 600;
+        }
+
+        .article-prose {
+            max-width: var(--measure);
+        }
+
+        .article-prose p {
+            margin-bottom: 1.35rem;
+            font-size: 1.02rem;
+        }
+
+        .article-prose h3 {
+            margin-top: 2.8rem;
+            margin-bottom: 1rem;
+            font-size: 1.45rem;
+        }
+
+        .article-prose h4 {
+            margin-top: 2rem;
+            margin-bottom: 0.6rem;
+            font-size: 1.12rem;
+        }
+
+        .article-prose figure {
+            margin: 2rem 0;
+        }
+
+        .article-prose figure img {
+            width: 100%;
+            aspect-ratio: 3 / 2;
+            object-fit: cover;
+        }
+
+        .article-prose figcaption {
+            font-family: var(--sans);
+            font-size: 0.78rem;
+            color: var(--ink-muted);
+            margin-top: 8px;
+            line-height: 1.5;
+        }
+
+        .article-prose .pull-quote {
+            font-size: 1.35rem;
+            font-style: italic;
+            border-left: 3px solid var(--accent);
+            padding-left: 1.8rem;
+            margin: 2.2rem 0;
+            color: var(--ink-soft);
+            line-height: 1.5;
+        }
+
+        .article-prose ul, .article-prose ol {
+            margin-bottom: 1.4rem;
+        }
+
+        /* ——— SIDEBAR ——— */
+        .sidebar {
+            position: sticky;
+            top: 100px;
+        }
+
+        .sidebar-block {
+            margin-bottom: 40px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid var(--rule-light);
+        }
+
+        .sidebar-block:last-child {
+            border-bottom: none;
+        }
+
+        .sidebar-label {
+            font-family: var(--sans);
+            font-size: 0.68rem;
+            text-transform: uppercase;
+            letter-spacing: 0.14em;
+            color: var(--ink-muted);
+            margin-bottom: 16px;
+        }
+
+        .sidebar-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--rule-light);
+            font-size: 0.92rem;
+            line-height: 1.4;
+        }
+
+        .sidebar-list li:last-child {
+            border-bottom: none;
+        }
+
+        .sidebar-list a {
+            border-bottom: none;
+            color: var(--ink-soft);
+        }
+
+        .sidebar-list a:hover {
+            color: var(--accent);
+        }
+
+        .sidebar-list .sidebar-meta {
+            font-family: var(--sans);
+            font-size: 0.68rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--ink-muted);
+            margin-top: 3px;
+        }
+
+        .about-sidebar {
+            font-size: 0.92rem;
+            color: var(--ink-soft);
+            line-height: 1.6;
+        }
+
+        .about-sidebar .author-name {
+            font-weight: 700;
+            color: var(--ink);
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .about-sidebar .author-role {
+            font-family: var(--sans);
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--accent-soft);
+            margin-bottom: 10px;
+        }
+
+        /* ——— CATEGORY FILTER ——— */
+        .category-filter {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 32px;
+        }
+
+        .filter-btn {
+            font-family: var(--sans);
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            padding: 6px 14px;
+            border: 1px solid var(--rule);
+            background: transparent;
+            cursor: pointer;
+            color: var(--ink-soft);
+            transition: all 0.2s;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            border-color: var(--accent);
+            color: var(--ink);
+            background: var(--paper-warm);
+        }
+
+        /* ——— FAQ ——— */
+        .faq-section {
+            margin: 80px 0 64px;
+            padding: 56px 0;
+            border-top: 1px solid var(--rule);
+            border-bottom: 1px solid var(--rule);
+        }
+
+        .faq-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 32px;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid var(--rule-light);
+        }
+
+        .faq-question {
+            width: 100%;
+            background: none;
+            border: none;
+            padding: 20px 0;
+            font-family: var(--serif);
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-align: left;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--ink);
+            gap: 20px;
+        }
+
+        .faq-question:hover {
+            color: var(--accent);
+        }
+
+        .faq-question .faq-icon {
+            font-size: 1.3rem;
+            color: var(--accent-soft);
+            transition: transform 0.3s;
+            flex-shrink: 0;
+        }
+
+        .faq-question.open .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            display: none;
+            padding: 0 0 24px;
+            font-size: 0.98rem;
+            color: var(--ink-soft);
+            max-width: var(--measure);
+        }
+
+        .faq-answer.open {
+            display: block;
+        }
+
+        /* ——— NEWSLETTER ——— */
+        .newsletter-section {
+            background: var(--paper-warm);
+            padding: 64px 0;
+            border-top: 1px solid var(--rule);
+            border-bottom: 1px solid var(--rule);
+        }
+
+        .newsletter-inner {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .newsletter-inner h2 {
+            font-size: 1.7rem;
+            margin-bottom: 12px;
+        }
+
+        .newsletter-inner p {
+            color: var(--ink-soft);
+            font-size: 0.98rem;
+            margin-bottom: 24px;
+        }
+
+        .newsletter-form {
+            display: flex;
+            gap: 10px;
+            max-width: 460px;
+            margin: 0 auto;
+        }
+
+        .newsletter-form input {
+            flex: 1;
+            padding: 14px 16px;
+            border: 1px solid var(--rule);
+            background: var(--paper-card);
+            font-family: var(--serif);
+            font-size: 0.95rem;
+            outline: none;
+        }
+
+        .newsletter-form input:focus {
+            border-color: var(--accent);
+        }
+
+        .newsletter-form button {
+            padding: 14px 28px;
+            background: var(--ink);
+            color: var(--paper);
+            border: none;
+            font-family: var(--sans);
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .newsletter-form button:hover {
+            background: var(--accent);
+        }
+
+        /* ——— FOOTER ——— */
+        .site-footer {
+            padding: 64px 0 40px;
+            background: var(--paper);
+            border-top: 1px solid var(--rule);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.6fr 1fr 1fr 1fr;
+            gap: 48px;
+            margin-bottom: 48px;
+        }
+
+        .footer-brand .logo-mark {
+            font-size: 1.5rem;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .footer-brand p {
+            font-size: 0.9rem;
+            color: var(--ink-muted);
+            max-width: 320px;
+            line-height: 1.6;
+        }
+
+        .footer-col h4 {
+            font-family: var(--sans);
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--ink-muted);
+            margin-bottom: 16px;
+            font-weight: 600;
+        }
+
+        .footer-col ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-col li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col a {
+            font-size: 0.9rem;
+            color: var(--ink-soft);
+            border-bottom: none;
+        }
+
+        .footer-col a:hover {
+            color: var(--accent);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid var(--rule-light);
+            padding-top: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: var(--sans);
+            font-size: 0.78rem;
+            color: var(--ink-muted);
+        }
+
+        .footer-bottom a {
+            color: var(--ink-muted);
+            border-bottom: none;
+        }
+
+        .footer-bottom a:hover {
+            color: var(--accent);
+        }
+
+        /* ——— RESPONSIVE ——— */
+        @media (max-width: 1024px) {
+            .layout-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                position: static;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 32px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 720px) {
+            body {
+                font-size: 16px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .header-inner {
+                flex-wrap: wrap;
+                gap: 12px;
+            }
+
+            .nav-main {
+                order: 3;
+                width: 100%;
+                gap: 16px;
+                font-size: 0.72rem;
+                flex-wrap: wrap;
+            }
+
+            .layout-grid {
+                padding: 24px 0 48px;
+            }
+
+            .featured-article h2 {
+                font-size: 1.7rem;
+            }
+
+            .full-article .article-header h2 {
+                font-size: 1.8rem;
+            }
+
+            .sidebar {
+                grid-template-columns: 1fr;
+            }
+
+            .newsletter-form {
+                flex-direction: column;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                gap: 12px;
+                text-align: center;
+            }
+
+            .ticker-bar .container {
+                flex-direction: column;
+                gap: 4px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ——— HEADER ——— -->
+<header class="site-header">
+    <div class="container header-inner">
+        <div class="logo">
+            <a href="/" class="logo-mark" aria-label="Gilded Room Theory home">Gilded <span>Room</span> Theory</a>
+            <span class="logo-sub">Interior · Architecture · Living</span>
+        </div>
+        <nav class="nav-main" aria-label="Primary navigation">
+          <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="terms.html">Terms Of Privacy</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+					<li><a href="cookies.html">Cookies Policy</a></li> 
+                    <li><a href="disclaimer.html">Disclaimer</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+        </nav>
+        <div class="header-actions">
+            <button class="search-toggle" id="searchToggle" aria-label="Open search">Search</button>
+        </div>
+    </div>
+</header>
+
+<!-- Search Overlay -->
+<div class="search-overlay" id="searchOverlay" role="dialog" aria-label="Search articles">
+    <div class="search-overlay-inner">
+        <button class="search-close" id="searchClose" aria-label="Close search">✕</button>
+        <input type="text" class="search-input-lg" id="searchInput" placeholder="Search essays, guides, and ideas…" autocomplete="off">
+        <ul class="search-results-list" id="searchResults"></ul>
+    </div>
+</div>
+
+<!-- ——— TICKER ——— -->
+<div class="ticker-bar">
+    <div class="container">
+        <span>Vol. 12 · Independent Editorial · Est. 2019</span>
+        <span>Current Issue: The Material Honesty</span>
+    </div>
+</div>
+
+<!-- ——— MAIN CONTENT ——— -->
+<main class="container">
+    <div class="layout-grid">
+
+        <!-- ——— PRIMARY COLUMN ——— -->
+        <div class="primary-column" id="interiors">
+
+            <!-- FEATURED ARTICLE -->
+            <article class="featured-article">
+                <div class="article-category">Architecture · Critical Essay</div>
+                <h1><a href="#featured-full">The Honest Wall: Why Materials Matter More Than Ever in an Age of Digital Distraction</a></h1>
+                <div class="article-meta">
+                    <span>By <strong>Elena Marchetti</strong></span>
+                    <span>March 14, 2026</span>
+                    <span class="read-time">18 min read</span>
+                </div>
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80" alt="A sunlit modern living room with exposed concrete walls, warm oak floors, and floor-to-ceiling windows overlooking a garden." class="featured-image">
+                <div class="featured-body">
+                    <p>There is a moment in every well-made room when the eye stops searching and the body simply settles. It rarely announces itself. It arrives quietly, usually after the light has shifted, after the hand has brushed against a stone countertop or a linen curtain, after the foot has registered the give of a solid wood floor. That moment—call it material honesty—is the opposite of visual noise. It is the built environment speaking in a language older than photography, older than rendering software, older than the scroll.</p>
+                    <p>We live in an era of unprecedented visual saturation. Interiors are consumed as images, judged in fractions of a second, saved to boards and forgotten. And yet the rooms that endure—the ones people return to in memory, the ones that shape how a family moves through its days—are almost never the ones that photograph best. They are the ones that feel best. They are built from materials that age with grace, that hold temperature and sound, that reveal their history rather than hiding it.</p>
+                    <p>This essay is an argument for slowing down. For choosing plaster over paint, stone over laminate, solid timber over veneer—not out of nostalgia, but out of a clear-eyed understanding that the surfaces we surround ourselves with shape not only how our homes look, but how our lives feel.</p>
+                </div>
+            </article>
+
+            <!-- FULL LONG-FORM ARTICLE -->
+            <article class="full-article" id="featured-full">
+                <div class="article-header">
+                    <div class="article-category" style="font-family: var(--sans); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--accent); margin-bottom: 10px;">The Material Honesty</div>
+                    <h2>The Honest Wall: Why Materials Matter More Than Ever in an Age of Digital Distraction</h2>
+                    <div class="article-byline">
+                        <span>By <strong>Elena Marchetti</strong>, Editor-in-Chief</span>
+                        <span>Photography by <strong>Jonas Lindqvist</strong></span>
+                        <span>March 14, 2026</span>
+                    </div>
+                </div>
+
+                <div class="article-prose">
+                    <p>The first house I ever loved was my grandmother's. It was not a beautiful house by any conventional measure. The ceilings were low. The kitchen was dark. The furniture was mismatched and the walls carried the ghosts of a dozen paint colors. But the floors—the floors were chestnut, laid in wide planks over a century old, worn into shallow valleys where generations of feet had passed. You could feel the house through those floors. They were cool in summer, warm in winter, and they creaked in a language that meant home.</p>
+                    <p>I did not know it then, but I was learning the first principle of enduring design: materials carry memory. They are not neutral. A wall of painted gypsum board forgets everything. A wall of lime plaster absorbs, breathes, and records. The choice between them is not a matter of budget or taste alone. It is a choice about what kind of life the room will support.</p>
+
+                    <h3>1. The Tyranny of the Render</h3>
+                    <p>The architectural profession has always been seduced by images. From Piranesi's imaginary prisons to the glossy pages of mid-century shelter magazines, architects have long designed for the eye. But the digital revolution has intensified this tendency to a pathological degree. A generation of designers now works primarily in software that renders surfaces as perfect, uniform, and frictionless. The result is a built environment that increasingly looks like a render: smooth, bright, and strangely airless.</p>
+                    <p>Walk through a newly completed luxury apartment in any global city and you will see the symptoms. Walls so flat they seem to repel light. Surfaces so uniform they could be printed. Floors with the grain of a photograph. These spaces photograph beautifully. They sell quickly. And they feel, after a week of living in them, like hotel rooms—pleasant, anonymous, and ultimately uninhabitable.</p>
+                    <blockquote class="pull-quote">"A room that photographs perfectly but feels dead is a failure of design, not a triumph."</blockquote>
+                    <p>This is not a new observation. In 1968, the furniture designer David Pye published <em>The Nature and Art of Workmanship</em>, a book built around a distinction between the "workmanship of risk" and the "workmanship of certainty." Pye argued that workmanship of risk—where the outcome depends on the maker's judgment and attention—produces objects of inherent richness and variation. Workmanship of certainty—where the result is fully determined in advance by a mold or a program—produces objects of uniform perfection and, often, of a certain deadness [citation:9]. The distinction applies with equal force to buildings. A hand-troweled plaster wall is a product of risk. A gypsum board wall painted with a roller is a product of certainty. Both can be beautiful. But only one will develop a patina that deepens with time.</p>
+
+                    <h3>2. Why Surfaces Shape Behavior</h3>
+                    <p>The argument for material honesty is not merely aesthetic. It is behavioral. The surfaces we touch, see, and move across every day shape how we feel and how we act. This is not mysticism; it is the ordinary working of the nervous system. Rough stone underfoot demands attention. Smooth wood invites bare feet. Cold metal signals efficiency; warm timber signals rest. The texture of a wall affects how sound travels and how light lands. A room lined with soft materials feels quieter, more intimate. A room of hard surfaces feels alert, public, exposed.</p>
+                    <p>Consider the difference between a kitchen counter of polished quartz and one of honed soapstone. The quartz is inert. It reflects light evenly, resists stains absolutely, and feels like nothing in particular. The soapstone is alive. It darkens where water has stood. It acquires a sheen where hands have rested. It can be scratched, and the scratches can be sanded away. It asks something of its owner: attention, care, a willingness to accept that use leaves marks. In return, it offers a surface that feels like a place where actual cooking happens, rather than a showroom display.</p>
+                    <p>These differences compound over years. A house of honest materials grows older with its inhabitants. A house of simulated materials grows shabbier. The first becomes more itself; the second becomes a worse version of what it was pretending to be. This is the quiet tragedy of the render-built home: it can only decline.</p>
+
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1200&q=80" alt="A close view of a hand-troweled lime plaster wall in warm ochre, showing subtle tonal variations and a soft, matte texture." loading="lazy">
+                        <figcaption>Lime plaster applied by hand records the gesture of the trowel. No two square meters are identical, and the surface improves as it cures. Photograph by Jonas Lindqvist.</figcaption>
+                    </figure>
+
+                    <h3>3. The Materials That Age Well</h3>
+                    <p>Not every material improves with time. The ones that do share certain characteristics: they are natural, they are porous, they are capable of developing a patina that is considered beautiful rather than merely worn. Here are the ones I return to again and again.</p>
+
+                    <h4>Lime Plaster</h4>
+                    <p>Lime plaster is the oldest wall finish in continuous use. It is made from limestone burned at high temperature, slaked with water, and mixed with sand and sometimes natural pigments. Applied in thin coats, it cures by carbonation—absorbing carbon dioxide from the air and slowly turning back into stone. A lime-plastered wall is alive in a way that painted drywall is not. It absorbs moisture and releases it, regulating indoor humidity. It softens sound. It reflects light with a depth that no paint can match, because the light penetrates the surface rather than bouncing off it. And it records its making. The trowel marks are not flaws; they are the signature of the artisan, a record of the moment the wall became itself.</p>
+
+                    <h4>Solid Timber</h4>
+                    <p>Wood is the most human of building materials. It is warm to the touch, it moves with the seasons, it smells of the forest it came from. But not all wood is equal. Veneered panels, glued to particleboard or MDF, are a simulacrum—thin skins stretched over nothing. Solid timber, whether in floors, beams, or furniture, is the real thing. It expands and contracts. It can be sanded and refinished. It darkens or lightens with exposure to light. A solid oak floor laid in a family home will, over twenty years, acquire a patina that no factory finish can replicate: a record of every footstep, every dropped glass, every chair pushed back from a table.</p>
+
+                    <h4>Stone</h4>
+                    <p>Stone is the most permanent material available to the domestic builder. It is also the most varied. Marble, limestone, granite, slate, travertine—each has its own character, its own way of receiving light, its own rate of wear. Honed stone is soft and matte; polished stone is reflective and formal. But the most beautiful stone surfaces are often the ones that show their history. A marble countertop with etched rings from wine glasses and lemon juice is not damaged; it is inscribed. It carries the marks of the meals that were cooked on it, the conversations that took place over it. To replace it because it looks "worn" is to mistake a record for a flaw.</p>
+
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80" alt="A honed marble kitchen countertop with visible veining and a patina of use, holding a wooden cutting board and a ceramic bowl." loading="lazy">
+                        <figcaption>Honed marble develops a patina of use that many designers now consider more beautiful than a pristine surface. Photograph by Jonas Lindqvist.</figcaption>
+                    </figure>
+
+                    <h3>4. The Case Against the Seamless</h3>
+                    <p>Contemporary design culture has an almost theological commitment to the seamless. Counters that meet walls without a visible joint. Cabinets with no handles. Floors that disappear into a continuous plane. The seamless is clean, modern, and photogenic. It is also, in most cases, a lie. Nothing in nature is seamless. Nothing in a well-lived home remains seamless for long.</p>
+                    <p>The problem with seamlessness is not that it is ugly. It is that it cannot accommodate life. A seamless white countertop in a kitchen where actual cooking happens will acquire stains. A handleless cabinet in a house with children will acquire fingerprints. A continuous floor in a home where people wear shoes will acquire scratches. When these things happen—and they will—the seamlessness is not enhanced but destroyed. The illusion collapses, and what remains is not patina but damage.</p>
+                    <p>The alternative is not chaos. It is honesty. A counter with a visible joint that can be repaired. A cabinet with a handle that can be replaced. A floor with visible planks that can be sanded and refinished. These things accept that life leaves marks. They are designed for maintenance, not for immaculate display.</p>
+
+                    <h3>5. Learning from the Vernacular</h3>
+                    <p>If we want to understand how to build rooms that age well, we can look to the buildings that have already done it. Vernacular architecture—the houses and barns and storehouses built by ordinary people without architects—is almost universally material-honest. It is built from what is locally available: stone, timber, earth, thatch, lime. It is designed to be repaired rather than replaced. It accepts that buildings change over time.</p>
+                    <p>Consider the traditional houses of the Indian subcontinent, which used mud, lime, and locally quarried stone. Or the timber-framed farmhouses of northern Europe, whose oak frames have stood for five centuries and can be repaired with a saw and a chisel. Or the adobe churches of the American Southwest, whose thick walls absorb the heat of the day and release it at night. These buildings are not primitive. They are sophisticated responses to climate, material, and the reality of maintenance. They are, in their own way, more advanced than much of what we build today.</p>
+                    <blockquote class="pull-quote">"The vernacular builder knew something the modern designer often forgets: a building is not a product. It is a relationship."</blockquote>
+
+                    <h3>6. Practical Strategies for a More Honest Home</h3>
+                    <p>The argument for material honesty is easy to make in the abstract. The challenge is to apply it in a real project, with a real budget, under real time pressure. Here are the strategies I return to in my own practice.</p>
+
+                    <h4>Choose one hero material per room</h4>
+                    <p>A room does not need to be honest everywhere. It needs one or two materials that carry the emotional weight. A bedroom with lime-plaster walls and simple painted drywall elsewhere will feel entirely different from a fully painted room. A kitchen with a solid oak island and practical laminate cabinets will feel like a kitchen where real cooking happens. The hero material becomes the anchor; everything else is a quiet supporting actor.</p>
+
+                    <h4>Let light do the work</h4>
+                    <p>Honest materials look best under natural light, which changes throughout the day and reveals the surface's depth. Artificial light, especially the flat, shadowless LED panels that dominate contemporary interiors, flattens everything it touches. Invest in lamps and fixtures that direct light across surfaces rather than flooding the room. A plaster wall lit from below is a different material than the same wall lit from above.</p>
+
+                    <h4>Accept the maintenance</h4>
+                    <p>Honest materials require care. Lime plaster can be repaired but not patched invisibly. Solid wood floors need occasional oiling. Stone counters should be sealed and can be etched. This is not a bug; it is a feature. The act of maintaining a material is a form of relationship. It keeps you connected to your home as a physical object, not just a backdrop.</p>
+
+                    <h4>Buy less, choose better</h4>
+                    <p>The economics of honest materials are often misunderstood. A solid oak floor costs more than engineered wood upfront, but it can be sanded and refinished multiple times over a century. A lime-plaster wall costs more than painted drywall, but it lasts decades longer and can be repaired. When you amortize the cost over the life of the building, the honest material is often cheaper. The problem is that our accounting systems rarely look beyond the initial construction budget.</p>
+
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200&q=80" alt="A bedroom with a solid oak floor, lime-washed walls, and linen bedding, lit by soft morning light through a large window." loading="lazy">
+                        <figcaption>A bedroom designed around material honesty: solid oak underfoot, lime-washed walls, linen textiles, and daylight as the primary light source. Photograph by Jonas Lindqvist.</figcaption>
+                    </figure>
+
+                    <h3>7. The Future of Honest Building</h3>
+                    <p>There is a tension in contemporary architecture between the desire for permanence and the imperative of sustainability. Buildings account for a significant portion of global carbon emissions, and the materials we choose matter enormously. Here, honesty and sustainability converge. The most sustainable materials are often the most honest: timber from managed forests, stone quarried locally, lime produced in traditional kilns, earth used as it is found.</p>
+                    <p>The materials that are easiest to recycle or reuse—solid timber, stone, brick, metal—are also the ones that age most gracefully. The materials that are hardest to recycle—composites, engineered panels, plastic laminates—are the ones that look worst as they wear. Choosing honest materials is not just an aesthetic decision. It is an environmental one.</p>
+                    <p>There is also a cultural dimension. As globalization homogenizes the built environment, the materials that remain rooted in place become more precious. A house built from local stone and timber is not just a house; it is a record of the place it stands. It carries the geology, the climate, the labor traditions of its region. In a world of identical apartments and identical finishes, that specificity is a form of resistance.</p>
+
+                    <h3>Conclusion: The Room That Remembers</h3>
+                    <p>The rooms we remember are not the ones that photographed best. They are the ones that felt most themselves. They are built from materials that carry the marks of their making and their use. They are walls that record the hand of the plasterer, floors that remember the feet that walked on them, counters that hold the history of meals cooked and conversations had.</p>
+                    <p>This is not nostalgia. It is a practical argument about what makes a home habitable over time. The seamless, the simulated, the immaculate—these things have their place. But they cannot carry the weight of a life. Only honest materials can do that. Only a wall that is really a wall, a floor that is really a floor, can become something more than itself: a place where memory settles, and where the ordinary acts of living are given the dignity of permanence.</p>
+                    <p>Choose the plaster over the paint. Choose the stone over the laminate. Choose the timber that will darken, the brass that will patina, the linen that will soften. Not because it is fashionable, but because it is true. The room that remembers is the room that lasts.</p>
+                </div>
+            </article>
+
+            <!-- MORE ARTICLES -->
+            <div style="margin-top: 80px; padding-top: 48px; border-top: 2px solid var(--ink);">
+                <div class="section-label">More from the Journal</div>
+                <div class="category-filter" id="categoryFilter">
+                    <button class="filter-btn active" data-category="all">All</button>
+                    <button class="filter-btn" data-category="interiors">Interiors</button>
+                    <button class="filter-btn" data-category="architecture">Architecture</button>
+                    <button class="filter-btn" data-category="materials">Materials</button>
+                    <button class="filter-btn" data-category="lighting">Lighting</button>
+                    <button class="filter-btn" data-category="space">Space Planning</button>
+                    <button class="filter-btn" data-category="guides">Guides</button>
+                </div>
+
+                <div class="article-list" id="articleList">
+                    <!-- Article 1 -->
+                    <article class="article-card" data-category="space">
+                        <div class="article-category">Space Planning</div>
+                        <h3><a href="#article-space">The 80-Centimeter Rule: A Practical Guide to Circulation in Small Homes</a></h3>
+                        <p class="article-excerpt">Most people design rooms by furniture placement. The result is often a space that looks right in a floor plan but feels wrong underfoot. The solution is to start with the body, not the sofa.</p>
+                        <div class="article-meta">
+                            <span>By <strong>Marcus Chen</strong></span>
+                            <span>February 28, 2026</span>
+                            <span class="read-time">12 min read</span>
+                        </div>
+                    </article>
+
+                    <!-- Article 2 -->
+                    <article class="article-card" data-category="lighting">
+                        <div class="article-category">Lighting</div>
+                        <h3><a href="#article-light">Layered Light: Why One Ceiling Fixture Is Never Enough</a></h3>
+                        <p class="article-excerpt">The single pendant in the center of the ceiling is the default of modern residential lighting. It is also the reason so many homes feel flat after dark. Here is how to build light in layers.</p>
+                        <div class="article-meta">
+                            <span>By <strong>Sofia Andersson</strong></span>
+                            <span>February 14, 2026</span>
+                            <span class="read-time">10 min read</span>
+                        </div>
+                    </article>
+
+                    <!-- Article 3 -->
+                    <article class="article-card" data-category="architecture">
+                        <div class="article-category">Architecture</div>
+                        <h3><a href="#article-prairie">Prairie Horizontals: What Frank Lloyd Wright's Robie House Still Teaches Us About Domestic Space</a></h3>
+                        <p class="article-excerpt">The Robie House was designed in 1908 for a 28-year-old bachelor with a taste for automobiles and open space. Its lessons about light, sequence, and the hearth remain urgent.</p>
+                        <div class="article-meta">
+                            <span>By <strong>Elena Marchetti</strong></span>
+                            <span>January 22, 2026</span>
+                            <span class="read-time">15 min read</span>
+                        </div>
+                    </article>
+
+                    <!-- Article 4 -->
+                    <article class="article-card" data-category="materials">
+                        <div class="article-category">Materials</div>
+                        <h3><a href="#article-timber">The Case for Reclaimed Timber: Why Old Wood Makes Better New Rooms</a></h3>
+                        <p class="article-excerpt">Reclaimed timber is not just an environmental choice. It is an aesthetic one. Old-growth wood has a density and a figure that plantation timber cannot replicate.</p>
+                        <div class="article-meta">
+                            <span>By <strong>James Okonkwo</strong></span>
+                            <span>January 8, 2026</span>
+                            <span class="read-time">9 min read</span>
+                        </div>
+                    </article>
+
+                    <!-- Article 5 -->
+                    <article class="article-card" data-category="interiors">
+                        <div class="article-category">Interiors</div>
+                        <h3><a href="#article-bedroom">The Bedroom Is Not a Hotel Room: Designing for Sleep, Not Display</a></h3>
+                        <p class="article-excerpt">We have imported the aesthetics of hospitality into the most private room in the house. The result is bedrooms that look like suites and feel like nobody lives there.</p>
+                        <div class="article-meta">
+                            <span>By <strong>Sofia Andersson</strong></span>
+                            <span>December 12, 2025</span>
+                            <span class="read-time">11 min read</span>
+                        </div>
+                    </article>
+
+                    <!-- Article 6 -->
+                    <article class="article-card" data-category="guides">
+                        <div class="article-category">Guides</div>
+                        <h3><a href="#article-renovation">Renovation Without Regret: A Checklist for the First Six Months</a></h3>
+                        <p class="article-excerpt">Most renovation mistakes are made before demolition begins. This guide walks through the decisions that matter most—and the ones you can safely postpone.</p>
+                        <div class="article-meta">
+                            <span>By <strong>Marcus Chen</strong></span>
+                            <span>November 30, 2025</span>
+                            <span class="read-time">14 min read</span>
+                        </div>
+                    </article>
+
+                    <!-- Article 7 -->
+                    <article class="article-card" data-category="architecture">
+                        <div class="article-category">Architecture</div>
+                        <h3><a href="#article-farnsworth">The Glass House Problem: What Mies van der Rohe's Farnsworth House Reveals About Transparency</a></h3>
+                        <p class="article-excerpt">The Farnsworth House is one of the most photographed buildings of the twentieth century. It is also one of the most misunderstood—and almost uninhabitable.</p>
+                        <div class="article-meta">
+                            <span>By <strong>James Okonkwo</strong></span>
+                            <span>November 14, 2025</span>
+                            <span class="read-time">13 min read</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ——— SIDEBAR ——— -->
+        <aside class="sidebar" aria-label="Sidebar">
+            <!-- About / Editor -->
+            <div class="sidebar-block">
+                <div class="sidebar-label">From the Editor</div>
+                <div class="about-sidebar">
+                    <span class="author-name">Elena Marchetti</span>
+                    <span class="author-role">Editor-in-Chief</span>
+                    <p>Elena is a practicing architect and writer. She founded Gilded Room Theory in 2019 to create a space for slow, serious writing about the built environment. Her work has appeared in <em>Architectural Review</em>, <em>Domus</em>, and <em>The Plan Journal</em>.</p>
+                </div>
+            </div>
+
+            <!-- Popular Articles -->
+            <div class="sidebar-block">
+                <div class="sidebar-label">Most Read This Month</div>
+                <ul class="sidebar-list">
+                    <li>
+                        <a href="#featured-full">The Honest Wall: Why Materials Matter More Than Ever</a>
+                        <div class="sidebar-meta">18 min read</div>
+                    </li>
+                    <li>
+                        <a href="#article-space">The 80-Centimeter Rule: Circulation in Small Homes</a>
+                        <div class="sidebar-meta">12 min read</div>
+                    </li>
+                    <li>
+                        <a href="#article-light">Layered Light: Why One Ceiling Fixture Is Never Enough</a>
+                        <div class="sidebar-meta">10 min read</div>
+                    </li>
+                    <li>
+                        <a href="#article-bedroom">The Bedroom Is Not a Hotel Room</a>
+                        <div class="sidebar-meta">11 min read</div>
+                    </li>
+                    <li>
+                        <a href="#article-prairie">Prairie Horizontals: Robie House Reconsidered</a>
+                        <div class="sidebar-meta">15 min read</div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Categories -->
+            <div class="sidebar-block">
+                <div class="sidebar-label">Browse by Category</div>
+                <ul class="sidebar-list">
+                    <li><a href="#interiors">Interior Design</a> <span style="float: right; font-family: var(--sans); font-size: 0.7rem; color: var(--ink-muted);">24</span></li>
+                    <li><a href="#architecture">Architecture</a> <span style="float: right; font-family: var(--sans); font-size: 0.7rem; color: var(--ink-muted);">18</span></li>
+                    <li><a href="#materials">Materials & Craft</a> <span style="float: right; font-family: var(--sans); font-size: 0.7rem; color: var(--ink-muted);">15</span></li>
+                    <li><a href="#lighting">Lighting</a> <span style="float: right; font-family: var(--sans); font-size: 0.7rem; color: var(--ink-muted);">9</span></li>
+                    <li><a href="#space">Space Planning</a> <span style="float: right; font-family: var(--sans); font-size: 0.7rem; color: var(--ink-muted);">12</span></li>
+                    <li><a href="#guides">Practical Guides</a> <span style="float: right; font-family: var(--sans); font-size: 0.7rem; color: var(--ink-muted);">21</span></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter compact -->
+            <div class="sidebar-block">
+                <div class="sidebar-label">The Weekly Dispatch</div>
+                <p style="font-size: 0.9rem; color: var(--ink-soft); margin-bottom: 12px;">One essay, one material, one detail. Delivered every Thursday.</p>
+                <form class="newsletter-form" style="flex-direction: column; max-width: 100%;" onsubmit="event.preventDefault(); alert('Thank you. You are subscribed.');">
+                    <input type="email" placeholder="Your email address" required style="width: 100%;">
+                    <button type="submit" style="width: 100%;">Subscribe</button>
+                </form>
+            </div>
+        </aside>
+
+    </div>
+
+    <!-- ——— FAQ ——— -->
+    <section class="faq-section" aria-labelledby="faq-heading">
+        <h2 id="faq-heading">Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+                What is the single most common mistake in interior design?
+                <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+                <p>The most common mistake is designing for the photograph rather than for the body. Too many rooms are arranged around a focal wall or a camera angle, with circulation treated as an afterthought. A room that photographs well but forces you to walk sideways between the sofa and the coffee table is a design failure, no matter how beautiful the palette.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+                How do I choose between paint and plaster for a feature wall?
+                <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+                <p>Paint is a film; plaster is a substance. Paint hides the wall; plaster becomes the wall. If you want color that changes with the light and a surface that develops character over time, choose plaster. If you need a precise, uniform color and a low-maintenance surface, choose paint. Both are valid. The question is what role you want the wall to play.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+                Is it worth hiring an architect for a residential renovation?
+                <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+                <p>It depends on the complexity of the project and the value you place on design. For a cosmetic refresh—paint, furniture, lighting—a good interior designer is often the better choice. For structural changes, changes of use, or projects where the relationship between rooms is being rethought, an architect brings a spatial intelligence that is difficult to replicate. The best time to involve one is before you buy the property, not after.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+                What does "material honesty" mean in practice?
+                <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+                <p>It means choosing materials for what they are, rather than for what they imitate. A solid oak floor is honest; a plastic floor printed with an oak photograph is not. Honest materials age with grace, can be repaired, and carry the marks of their making and use. Dishonest materials look best when new and decline from there.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+                How much should I budget for lighting in a renovation?
+                <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+                <p>A useful rule of thumb is to allocate 8 to 12 percent of your construction budget to lighting—fixtures, controls, and installation. This is higher than most homeowners expect, but lighting is the single most transformative element in a room, and the most expensive to change later. Cutting the lighting budget is almost always a mistake.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ——— NEWSLETTER ——— -->
+    <section class="newsletter-section" aria-labelledby="newsletter-heading">
+        <div class="newsletter-inner">
+            <h2 id="newsletter-heading">The Gilded Room Dispatch</h2>
+            <p>Long-form essays, practical guides, and material studies. One email every Thursday. No noise, no affiliate links, no sponsored content.</p>
+            <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you. You are subscribed.');">
+                <input type="email" placeholder="Your email address" required aria-label="Email address">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+</main>
+
+<!-- ——— FOOTER ——— -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <span class="logo-mark">Gilded <span>Room</span> Theory</span>
+                <p>An independent editorial publication about interior design, architecture, and the art of living well within built space. Founded 2019. Published in London and New York.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Sections</h4>
+                <ul>
+                    <li><a href="#interiors">Interior Design</a></li>
+                    <li><a href="#architecture">Architecture</a></li>
+                    <li><a href="#materials">Materials</a></li>
+                    <li><a href="#lighting">Lighting</a></li>
+                    <li><a href="#guides">Guides</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>About</h4>
+                <ul>
+                    <li><a href="#about">Our Story</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#terms">Terms of Use</a></li>
+                    <li><a href="#cookies">Cookie Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow</h4>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Pinterest</a></li>
+                    <li><a href="#">Newsletter</a></li>
+                    <li><a href="#">RSS</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 Gilded Room Theory. All rights reserved.</span>
+            <span>Made with attention to materials.</span>
+        </div>
+    </div>
+</footer>
+
+<!-- ——— JAVASCRIPT ——— -->
+<script>
+    // ——— FAQ TOGGLE ———
+    document.querySelectorAll('.faq-question').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const answer = this.nextElementSibling;
+            const isOpen = this.classList.contains('open');
+            // Close all
+            document.querySelectorAll('.faq-question').forEach(b => {
+                b.classList.remove('open');
+                b.setAttribute('aria-expanded', 'false');
+                b.nextElementSibling.classList.remove('open');
+            });
+            if (!isOpen) {
+                this.classList.add('open');
+                this.setAttribute('aria-expanded', 'true');
+                answer.classList.add('open');
+            }
+        });
+    });
+
+    // ——— CATEGORY FILTER ———
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const articleCards = document.querySelectorAll('.article-card');
+
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            filterBtns.forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            const cat = this.dataset.category;
+            articleCards.forEach(card => {
+                if (cat === 'all' || card.dataset.category === cat) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    });
+
+    // ——— SEARCH ———
+    const searchToggle = document.getElementById('searchToggle');
+    const searchOverlay = document.getElementById('searchOverlay');
+    const searchClose = document.getElementById('searchClose');
+    const searchInput = document.getElementById('searchInput');
+    const searchResults = document.getElementById('searchResults');
+
+    // Build a simple index from article titles and excerpts
+    const searchIndex = [
+        { title: 'The Honest Wall: Why Materials Matter More Than Ever', cat: 'Materials', url: '#featured-full' },
+        { title: 'The 80-Centimeter Rule: Circulation in Small Homes', cat: 'Space Planning', url: '#article-space' },
+        { title: 'Layered Light: Why One Ceiling Fixture Is Never Enough', cat: 'Lighting', url: '#article-light' },
+        { title: 'Prairie Horizontals: Robie House Reconsidered', cat: 'Architecture', url: '#article-prairie' },
+        { title: 'The Case for Reclaimed Timber', cat: 'Materials', url: '#article-timber' },
+        { title: 'The Bedroom Is Not a Hotel Room', cat: 'Interiors', url: '#article-bedroom' },
+        { title: 'Renovation Without Regret: A Checklist', cat: 'Guides', url: '#article-renovation' },
+        { title: 'The Glass House Problem: Farnsworth House', cat: 'Architecture', url: '#article-farnsworth' },
+        { title: 'Why Materials Matter More Than Ever in an Age of Digital Distraction', cat: 'Materials', url: '#featured-full' },
+        { title: 'A Practical Guide to Circulation in Small Homes', cat: 'Space Planning', url: '#article-space' }
+    ];
+
+    searchToggle.addEventListener('click', () => {
+        searchOverlay.classList.add('active');
+        searchInput.focus();
+    });
+
+    searchClose.addEventListener('click', () => {
+        searchOverlay.classList.remove('active');
+        searchInput.value = '';
+        searchResults.innerHTML = '';
+    });
+
+    searchOverlay.addEventListener('click', (e) => {
+        if (e.target === searchOverlay) {
+            searchOverlay.classList.remove('active');
+        }
+    });
+
+    searchInput.addEventListener('input', function() {
+        const q = this.value.toLowerCase().trim();
+        searchResults.innerHTML = '';
+        if (q.length < 2) return;
+        const matches = searchIndex.filter(item =>
+            item.title.toLowerCase().includes(q) || item.cat.toLowerCase().includes(q)
+        );
+        if (matches.length === 0) {
+            searchResults.innerHTML = '<li style="color: var(--ink-muted);">No results found.</li>';
+            return;
+        }
+        matches.slice(0, 8).forEach(item => {
+            const li = document.createElement('li');
+            li.innerHTML = `<a href="${item.url}">${item.title}</a><div class="result-meta">${item.cat}</div>`;
+            searchResults.appendChild(li);
+        });
+    });
+
+    // Close search on Escape
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && searchOverlay.classList.contains('active')) {
+            searchOverlay.classList.remove('active');
+            searchInput.value = '';
+            searchResults.innerHTML = '';
+        }
+    });
+
+    // ——— SMOOTH ANCHOR WITH HEADER OFFSET (simple) ———
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            const target = document.querySelector(targetId);
+            if (target) {
+                e.preventDefault();
+                const offset = 80;
+                const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+                window.scrollTo({ top, behavior: 'smooth' });
+                // Close search if open
+                searchOverlay.classList.remove('active');
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

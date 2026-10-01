@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About — Gilded Room Theory</title>
+    <meta name="description" content="Gilded Room Theory is an independent editorial publication exploring interior design, architecture, materials, and the art of living well within built space.">
+    <meta property="og:title" content="About — Gilded Room Theory">
+    <meta property="og:description" content="Learn about our mission, our editors, and the ideas that drive our slow, serious writing about the built environment.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gildedroomtheory.com/about.html">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80">
+    <link rel="canonical" href="https://gildedroomtheory.com/about.html">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "name": "About Gilded Room Theory",
+        "description": "An independent editorial publication on interior design, architecture, and the art of living well within built space.",
+        "url": "https://gildedroomtheory.com/about.html",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Gilded Room Theory"
+        }
+    }
+    </script>
+    <style>
+        /* ——— RESET & BASE ——— */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --ink: #1a1a1a;
+            --ink-soft: #3d3d3d;
+            --ink-muted: #6b6b6b;
+            --paper: #fcfaf7;
+            --paper-warm: #f6f2ec;
+            --paper-card: #ffffff;
+            --rule: #e2ddd6;
+            --rule-light: #ece8e2;
+            --accent: #8b6f4c;
+            --accent-soft: #b39b7c;
+            --serif: 'Georgia', 'Times New Roman', 'Palatino Linotype', 'Book Antiqua', serif;
+            --sans: 'Helvetica Neue', 'Segoe UI', Arial, sans-serif;
+            --measure: 720px;
+            --sidebar: 300px;
+            --gap: 48px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--serif);
+            background: var(--paper);
+            color: var(--ink);
+            line-height: 1.7;
+            font-size: 17px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            color: var(--ink);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+
+        a:hover {
+            border-bottom-color: var(--accent);
+        }
+
+        h1, h2, h3, h4 {
+            font-family: var(--serif);
+            font-weight: 700;
+            line-height: 1.25;
+            letter-spacing: -0.01em;
+        }
+
+        h1 {
+            font-size: 2.6rem;
+            margin-bottom: 0.5rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin: 2.5rem 0 1rem;
+        }
+
+        h3 {
+            font-size: 1.35rem;
+            margin: 2rem 0 0.75rem;
+        }
+
+        h4 {
+            font-size: 1.1rem;
+            margin: 1.5rem 0 0.5rem;
+        }
+
+        p {
+            margin-bottom: 1.25rem;
+        }
+
+        blockquote {
+            border-left: 3px solid var(--accent-soft);
+            padding-left: 1.5rem;
+            margin: 2rem 0;
+            font-style: italic;
+            color: var(--ink-soft);
+        }
+
+        ul, ol {
+            margin-bottom: 1.25rem;
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.4rem;
+        }
+
+        /* ——— UTILITY ——— */
+        .container {
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: 0 28px;
+        }
+
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+            border: 0;
+        }
+
+        /* ——— HEADER ——— */
+        .site-header {
+            border-bottom: 1px solid var(--rule);
+            background: var(--paper);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: baseline;
+            gap: 6px;
+        }
+
+        .logo-mark {
+            font-family: var(--serif);
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            color: var(--ink);
+            border: none;
+        }
+
+        .logo-mark span {
+            color: var(--accent);
+            font-style: italic;
+        }
+
+        .logo-sub {
+            font-family: var(--sans);
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 0.18em;
+            color: var(--ink-muted);
+            display: block;
+            margin-top: 2px;
+        }
+
+        .nav-main {
+            display: flex;
+            gap: 28px;
+            font-family: var(--sans);
+            font-size: 0.82rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--ink-soft);
+        }
+
+        .nav-main a {
+            border-bottom: none;
+            padding-bottom: 2px;
+        }
+
+        .nav-main a:hover {
+            border-bottom: 1px solid var(--accent);
+            color: var(--ink);
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .search-toggle {
+            background: none;
+            border: 1px solid var(--rule);
+            padding: 8px 14px;
+            font-family: var(--sans);
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            cursor: pointer;
+            color: var(--ink-soft);
+            transition: all 0.2s;
+        }
+
+        .search-toggle:hover {
+            border-color: var(--accent);
+            color: var(--ink);
+        }
+
+        /* Search overlay */
+        .search-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(252, 250, 247, 0.98);
+            z-index: 200;
+            padding: 80px 28px;
+            overflow-y: auto;
+        }
+
+        .search-overlay.active {
+            display: block;
+        }
+
+        .search-overlay-inner {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .search-close {
+            float: right;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--ink-muted);
+            font-family: var(--sans);
+        }
+
+        .search-input-lg {
+            width: 100%;
+            padding: 18px 0;
+            font-family: var(--serif);
+            font-size: 1.6rem;
+            border: none;
+            border-bottom: 2px solid var(--rule);
+            background: transparent;
+            outline: none;
+            color: var(--ink);
+            margin-bottom: 32px;
+        }
+
+        .search-input-lg:focus {
+            border-bottom-color: var(--accent);
+        }
+
+        .search-results-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .search-results-list li {
+            padding: 14px 0;
+            border-bottom: 1px solid var(--rule-light);
+        }
+
+        .search-results-list a {
+            font-size: 1.05rem;
+            border: none;
+            display: block;
+        }
+
+        .search-results-list a:hover {
+            color: var(--accent);
+        }
+
+        .search-results-list .result-meta {
+            font-family: var(--sans);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--ink-muted);
+            margin-top: 4px;
+        }
+
+        /* ——— TICKER / KICKER BAR ——— */
+        .ticker-bar {
+            background: var(--paper-warm);
+            border-bottom: 1px solid var(--rule-light);
+            padding: 10px 0;
+            font-family: var(--sans);
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--ink-muted);
+        }
+
+        .ticker-bar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* ——— MAIN LAYOUT ——— */
+        .layout-grid {
+            display: grid;
+            grid-template-columns: 1fr var(--sidebar);
+            gap: var(--gap);
+            padding: 48px 0 64px;
+            align-items: start;
+        }
+
+        /* ——— ABOUT PAGE SPECIFIC ——— */
+        .about-hero {
+            margin-bottom: 48px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid var(--rule);
+        }
+
+        .about-hero .article-category {
+            font-family: var(--sans);
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--accent);
+            margin-bottom: 10px;
+        }
+
+        .about-hero h1 {
+            font-size: 2.6rem;
+            margin: 0 0 16px;
+            line-height: 1.2;
+        }
+
+        .about-hero .about-intro {
+            font-size: 1.15rem;
+            color: var(--ink-soft);
+            max-width: 680px;
+            line-height: 1.7;
+        }
+
+        .about-image-full {
+            width: 100%;
+            aspect-ratio: 21 / 9;
+            object-fit: cover;
+            margin: 32px 0 40px;
+        }
+
+        .about-prose {
+            max-width: var(--measure);
+        }
+
+        .about-prose p {
+            margin-bottom: 1.35rem;
+            font-size: 1.02rem;
+        }
+
+        .about-prose h2 {
+            margin-top: 2.8rem;
+            margin-bottom: 1rem;
+            font-size: 1.6rem;
+        }
+
+        .about-prose h3 {
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+            font-size: 1.25rem;
+        }
+
+        .about-prose .pull-quote {
+            font-size: 1.35rem;
+            font-style: italic;
+            border-left: 3px solid var(--accent);
+            padding-left: 1.8rem;
+            margin: 2.2rem 0;
+            color: var(--ink-soft);
+            line-height: 1.5;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+            margin: 32px 0;
+        }
+
+        .team-card {
+            background: var(--paper-card);
+            border: 1px solid var(--rule-light);
+            padding: 28px 24px;
+        }
+
+        .team-card .team-name {
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 4px;
+        }
+
+        .team-card .team-role {
+            font-family: var(--sans);
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--accent-soft);
+            margin-bottom: 12px;
+        }
+
+        .team-card p {
+            font-size: 0.92rem;
+            color: var(--ink-soft);
+            margin-bottom: 0;
+            line-height: 1.6;
+        }
+
+        .values-list {
+            list-style: none;
+            padding: 0;
+            margin: 24px 0;
+        }
+
+        .values-list li {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--rule-light);
+            font-size: 1rem;
+            color: var(--ink-soft);
+            display: flex;
+            gap: 14px;
+            align-items: flex-start;
+        }
+
+        .values-list li:last-child {
+            border-bottom: none;
+        }
+
+        .values-list .value-num {
+            font-family: var(--sans);
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--accent);
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .contact-block {
+            background: var(--paper-warm);
+            padding: 32px 28px;
+            margin: 32px 0;
+            border-left: 3px solid var(--accent);
+        }
+
+        .contact-block p {
+            margin-bottom: 8px;
+            font-size: 0.98rem;
+        }
+
+        .contact-block p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* ——— SIDEBAR ——— */
+        .sidebar {
+            position: sticky;
+            top: 100px;
+        }
+
+        .sidebar-block {
+            margin-bottom: 40px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid var(--rule-light);
+        }
+
+        .sidebar-block:last-child {
+            border-bottom: none;
+        }
+
+        .sidebar-label {
+            font-family: var(--sans);
+            font-size: 0.68rem;
+            text-transform: uppercase;
+            letter-spacing: 0.14em;
+            color: var(--ink-muted);
+            margin-bottom: 16px;
+        }
+
+        .sidebar-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--rule-light);
+            font-size: 0.92rem;
+            line-height: 1.4;
+        }
+
+        .sidebar-list li:last-child {
+            border-bottom: none;
+        }
+
+        .sidebar-list a {
+            border-bottom: none;
+            color: var(--ink-soft);
+        }
+
+        .sidebar-list a:hover {
+            color: var(--accent);
+        }
+
+        .sidebar-list .sidebar-meta {
+            font-family: var(--sans);
+            font-size: 0.68rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--ink-muted);
+            margin-top: 3px;
+        }
+
+        .about-sidebar {
+            font-size: 0.92rem;
+            color: var(--ink-soft);
+            line-height: 1.6;
+        }
+
+        .about-sidebar .author-name {
+            font-weight: 700;
+            color: var(--ink);
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .about-sidebar .author-role {
+            font-family: var(--sans);
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--accent-soft);
+            margin-bottom: 10px;
+        }
+
+        /* ——— NEWSLETTER ——— */
+        .newsletter-section {
+            background: var(--paper-warm);
+            padding: 64px 0;
+            border-top: 1px solid var(--rule);
+            border-bottom: 1px solid var(--rule);
+        }
+
+        .newsletter-inner {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .newsletter-inner h2 {
+            font-size: 1.7rem;
+            margin-bottom: 12px;
+        }
+
+        .newsletter-inner p {
+            color: var(--ink-soft);
+            font-size: 0.98rem;
+            margin-bottom: 24px;
+        }
+
+        .newsletter-form {
+            display: flex;
+            gap: 10px;
+            max-width: 460px;
+            margin: 0 auto;
+        }
+
+        .newsletter-form input {
+            flex: 1;
+            padding: 14px 16px;
+            border: 1px solid var(--rule);
+            background: var(--paper-card);
+            font-family: var(--serif);
+            font-size: 0.95rem;
+            outline: none;
+        }
+
+        .newsletter-form input:focus {
+            border-color: var(--accent);
+        }
+
+        .newsletter-form button {
+            padding: 14px 28px;
+            background: var(--ink);
+            color: var(--paper);
+            border: none;
+            font-family: var(--sans);
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .newsletter-form button:hover {
+            background: var(--accent);
+        }
+
+        /* ——— FOOTER ——— */
+        .site-footer {
+            padding: 64px 0 40px;
+            background: var(--paper);
+            border-top: 1px solid var(--rule);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.6fr 1fr 1fr 1fr;
+            gap: 48px;
+            margin-bottom: 48px;
+        }
+
+        .footer-brand .logo-mark {
+            font-size: 1.5rem;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .footer-brand p {
+            font-size: 0.9rem;
+            color: var(--ink-muted);
+            max-width: 320px;
+            line-height: 1.6;
+        }
+
+        .footer-col h4 {
+            font-family: var(--sans);
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--ink-muted);
+            margin-bottom: 16px;
+            font-weight: 600;
+        }
+
+        .footer-col ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-col li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col a {
+            font-size: 0.9rem;
+            color: var(--ink-soft);
+            border-bottom: none;
+        }
+
+        .footer-col a:hover {
+            color: var(--accent);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid var(--rule-light);
+            padding-top: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: var(--sans);
+            font-size: 0.78rem;
+            color: var(--ink-muted);
+        }
+
+        .footer-bottom a {
+            color: var(--ink-muted);
+            border-bottom: none;
+        }
+
+        .footer-bottom a:hover {
+            color: var(--accent);
+        }
+
+        /* ——— RESPONSIVE ——— */
+        @media (max-width: 1024px) {
+            .layout-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                position: static;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 32px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 720px) {
+            body {
+                font-size: 16px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .header-inner {
+                flex-wrap: wrap;
+                gap: 12px;
+            }
+
+            .nav-main {
+                order: 3;
+                width: 100%;
+                gap: 16px;
+                font-size: 0.72rem;
+                flex-wrap: wrap;
+            }
+
+            .layout-grid {
+                padding: 24px 0 48px;
+            }
+
+            .about-hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .sidebar {
+                grid-template-columns: 1fr;
+            }
+
+            .newsletter-form {
+                flex-direction: column;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                gap: 12px;
+                text-align: center;
+            }
+
+            .ticker-bar .container {
+                flex-direction: column;
+                gap: 4px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ——— HEADER ——— -->
+<header class="site-header">
+    <div class="container header-inner">
+        <div class="logo">
+            <a href="index.html" class="logo-mark" aria-label="Gilded Room Theory home">Gilded <span>Room</span> Theory</a>
+            <span class="logo-sub">Interior · Architecture · Living</span>
+        </div>
+        <nav class="nav-main" aria-label="Primary navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="terms.html">Terms Of Privacy</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="cookies.html">Cookies Policy</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+            <li><a href="categories.html">Categories</a></li>
+        </nav>
+        <div class="header-actions">
+            <button class="search-toggle" id="searchToggle" aria-label="Open search">Search</button>
+        </div>
+    </div>
+</header>
+
+<!-- Search Overlay -->
+<div class="search-overlay" id="searchOverlay" role="dialog" aria-label="Search articles">
+    <div class="search-overlay-inner">
+        <button class="search-close" id="searchClose" aria-label="Close search">✕</button>
+        <input type="text" class="search-input-lg" id="searchInput" placeholder="Search essays, guides, and ideas…" autocomplete="off">
+        <ul class="search-results-list" id="searchResults"></ul>
+    </div>
+</div>
+
+<!-- ——— TICKER ——— -->
+<div class="ticker-bar">
+    <div class="container">
+        <span>Vol. 12 · Independent Editorial · Est. 2019</span>
+        <span>Current Issue: The Material Honesty</span>
+    </div>
+</div>
+
+<!-- ——— MAIN CONTENT ——— -->
+<main class="container">
+    <div class="layout-grid">
+
+        <!-- ——— PRIMARY COLUMN ——— -->
+        <div class="primary-column">
+
+            <!-- ABOUT HERO -->
+            <section class="about-hero">
+                <div class="article-category">About the Journal</div>
+                <h1>Slow writing about rooms that last.</h1>
+                <p class="about-intro">Gilded Room Theory is an independent editorial publication exploring interior design, architecture, materials, and the art of living well within built space. We publish long-form essays and practical guides for people who believe the built environment shapes how life feels.</p>
+            </section>
+
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1400&q=80" alt="A sunlit modern living room with exposed concrete walls, warm oak floors, and floor-to-ceiling windows overlooking a garden." class="about-image-full" loading="lazy">
+
+            <!-- ABOUT PROSE -->
+            <div class="about-prose">
+
+                <p>Gilded Room Theory was founded in 2019 in a small studio in London, with a simple conviction: that the conversation about design had become too fast, too visual, and too disconnected from the experience of actually living in a space. We wanted to create a publication that treated architecture and interiors with the seriousness they deserve—not as lifestyle decoration, but as a fundamental part of how human beings make sense of the world.</p>
+
+                <p>Our name is a provocation. "Gilded" suggests the ornamental and the decorative—the surfaces that catch the light. "Room Theory" suggests the analytical and the structural—the ideas that hold a space together. We believe both matter. A room without thought is hollow. A room without beauty is a diagram. The best rooms are both.</p>
+
+                <blockquote class="pull-quote">"The rooms we remember are not the ones that photographed best. They are the ones that felt most themselves."</blockquote>
+
+                <h2>What We Publish</h2>
+
+                <p>We publish three kinds of writing:</p>
+
+                <ul>
+                    <li><strong>Critical essays</strong> that examine the ideas, histories, and cultural forces that shape the built environment—from the legacy of modernism to the politics of housing to the meaning of material honesty.</li>
+                    <li><strong>Practical guides</strong> that help people make better decisions about their own spaces, whether they are renovating a kitchen, planning a lighting scheme, or simply trying to make a small apartment feel like home.</li>
+                    <li><strong>Material studies</strong> that look closely at the substances we build with—timber, stone, plaster, glass, metal—and the ways they age, perform, and shape the experience of a room.</li>
+                </ul>
+
+                <p>We do not publish sponsored content. We do not use affiliate links. We do not accept payment for coverage. Our only allegiance is to our readers and to the truth as we understand it.</p>
+
+                <h2>How We Work</h2>
+
+                <p>Every article we publish goes through a deliberate, slow process. We research deeply. We visit buildings. We interview architects, craftspeople, historians, and homeowners. We argue with each other about drafts. We cut sentences we love because they do not serve the piece. We believe that writing about the built environment requires the same care that goes into building well—attention to detail, respect for materials, and a willingness to revise.</p>
+
+                <p>Our editorial team is small and deliberately so. We are architects, writers, and critics who have spent years working in and thinking about the built environment. We are not influencers. We are not trend forecasters. We are people who care about how spaces work and why they matter.</p>
+
+                <h2>Our Values</h2>
+
+                <ul class="values-list">
+                    <li>
+                        <span class="value-num">01</span>
+                        <span><strong>Material honesty.</strong> We believe in materials that are what they appear to be—that age with grace, can be repaired, and carry the marks of their making and use. We are skeptical of simulations and suspicious of the seamless.</span>
+                    </li>
+                    <li>
+                        <span class="value-num">02</span>
+                        <span><strong>Slow looking.</strong> A building is not an image. It is a sequence of experiences, a set of relationships between body and space. We try to write in a way that honors that complexity, rather than reducing architecture to a photograph.</span>
+                    </li>
+                    <li>
+                        <span class="value-num">03</span>
+                        <span><strong>Practical intelligence.</strong> We are interested in ideas that can be applied—in guides that help people make better decisions, in criticism that illuminates rather than obscures, in writing that is rigorous without being academic.</span>
+                    </li>
+                    <li>
+                        <span class="value-num">04</span>
+                        <span><strong>Independence.</strong> We answer to no advertiser, no brand, no institution. Our only obligation is to our readers and to the integrity of the work.</span>
+                    </li>
+                </ul>
+
+                <h2>The Team</h2>
+
+                <div class="team-grid">
+                    <div class="team-card">
+                        <div class="team-name">Elena Marchetti</div>
+                        <div class="team-role">Editor-in-Chief</div>
+                        <p>Elena is a practicing architect and writer. She founded Gilded Room Theory in 2019 to create a space for slow, serious writing about the built environment. Her work has appeared in <em>Architectural Review</em>, <em>Domus</em>, and <em>The Plan Journal</em>. She lives in London.</p>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-name">Marcus Chen</div>
+                        <div class="team-role">Senior Editor, Practical Guides</div>
+                        <p>Marcus is an interior designer and educator. He writes about space planning, renovation, and the everyday decisions that shape how a home functions. He has taught at the Royal College of Art and runs a small practice in Brooklyn.</p>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-name">Sofia Andersson</div>
+                        <div class="team-role">Contributing Editor, Lighting & Interiors</div>
+                        <p>Sofia is a lighting designer and writer based in Stockholm. She writes about the ways light shapes atmosphere, behavior, and the experience of home. Her work focuses on the intersection of technical precision and emotional effect.</p>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-name">James Okonkwo</div>
+                        <div class="team-role">Contributing Editor, Architecture & Materials</div>
+                        <p>James is an architectural historian and critic. He writes about the legacies of modernism, the politics of materials, and the relationship between buildings and the landscapes they inhabit. He teaches at the University of Cape Town.</p>
+                    </div>
+                </div>
+
+                <h2>Contact</h2>
+
+                <div class="contact-block">
+                    <p><strong>Editorial inquiries:</strong> editor@gildedroomtheory.com</p>
+                    <p><strong>Advertising & partnerships:</strong> We do not accept sponsored content or display advertising. We do accept underwriting for our newsletter, clearly labeled as such. Contact partnerships@gildedroomtheory.com for details.</p>
+                    <p><strong>Pitches:</strong> We welcome pitches from writers who share our values. Please send a short summary and a writing sample to pitches@gildedroomtheory.com. We read everything, but we are slow to respond.</p>
+                </div>
+
+                <p style="margin-top: 32px; font-style: italic; color: var(--ink-muted); font-size: 0.95rem;">Gilded Room Theory is published in London and New York. We are entirely reader-supported. If you value our work, please consider subscribing to our newsletter or sharing our articles with someone who might appreciate them.</p>
+
+            </div>
+        </div>
+
+        <!-- ——— SIDEBAR ——— -->
+        <aside class="sidebar" aria-label="Sidebar">
+            <!-- About / Editor -->
+            <div class="sidebar-block">
+                <div class="sidebar-label">From the Editor</div>
+                <div class="about-sidebar">
+                    <span class="author-name">Elena Marchetti</span>
+                    <span class="author-role">Editor-in-Chief</span>
+                    <p>Elena is a practicing architect and writer. She founded Gilded Room Theory in 2019 to create a space for slow, serious writing about the built environment. Her work has appeared in <em>Architectural Review</em>, <em>Domus</em>, and <em>The Plan Journal</em>.</p>
+                </div>
+            </div>
+
+            <!-- Popular Articles -->
+            <div class="sidebar-block">
+                <div class="sidebar-label">Most Read This Month</div>
+                <ul class="sidebar-list">
+                    <li>
+                        <a href="#featured-full">The Honest Wall: Why Materials Matter More Than Ever</a>
+                        <div class="sidebar-meta">18 min read</div>
+                    </li>
+                    <li>
+                        <a href="#article-space">The 80-Centimeter Rule: Circulation in Small Homes</a>
+                        <div class="sidebar-meta">12 min read</div>
+                    </li>
+                    <li>
+                        <a href="#article-light">Layered Light: Why One Ceiling Fixture Is Never Enough</a>
+                        <div class="sidebar-meta">10 min read</div>
+                    </li>
+                    <li>
+                        <a href="#article-bedroom">The Bedroom Is Not a Hotel Room</a>
+                        <div class="sidebar-meta">11 min read</div>
+                    </li>
+                    <li>
+                        <a href="#article-prairie">Prairie Horizontals: Robie House Reconsidered</a>
+                        <div class="sidebar-meta">15 min read</div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Categories -->
+            <div class="sidebar-block">
+                <div class="sidebar-label">Browse by Category</div>
+                <ul class="sidebar-list">
+                    <li><a href="categories.html">Interior Design</a> <span style="float: right; font-family: var(--sans); font-size: 0.7rem; color: var(--ink-muted);">24</span></li>
+                    <li><a href="categories.html">Architecture</a> <span style="float: right; font-family: var(--sans); font-size: 0.7rem; color: var(--ink-muted);">18</span></li>
+                    <li><a href="categories.html">Materials & Craft</a> <span style="float: right; font-family: var(--sans); font-size: 0.7rem; color: var(--ink-muted);">15</span></li>
+                    <li><a href="categories.html">Lighting</a> <span style="float: right; font-family: var(--sans); font-size: 0.7rem; color: var(--ink-muted);">9</span></li>
+                    <li><a href="categories.html">Space Planning</a> <span style="float: right; font-family: var(--sans); font-size: 0.7rem; color: var(--ink-muted);">12</span></li>
+                    <li><a href="categories.html">Practical Guides</a> <span style="float: right; font-family: var(--sans); font-size: 0.7rem; color: var(--ink-muted);">21</span></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter compact -->
+            <div class="sidebar-block">
+                <div class="sidebar-label">The Weekly Dispatch</div>
+                <p style="font-size: 0.9rem; color: var(--ink-soft); margin-bottom: 12px;">One essay, one material, one detail. Delivered every Thursday.</p>
+                <form class="newsletter-form" style="flex-direction: column; max-width: 100%;" onsubmit="event.preventDefault(); alert('Thank you. You are subscribed.');">
+                    <input type="email" placeholder="Your email address" required style="width: 100%;">
+                    <button type="submit" style="width: 100%;">Subscribe</button>
+                </form>
+            </div>
+        </aside>
+
+    </div>
+
+    <!-- ——— NEWSLETTER ——— -->
+    <section class="newsletter-section" aria-labelledby="newsletter-heading">
+        <div class="newsletter-inner">
+            <h2 id="newsletter-heading">The Gilded Room Dispatch</h2>
+            <p>Long-form essays, practical guides, and material studies. One email every Thursday. No noise, no affiliate links, no sponsored content.</p>
+            <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you. You are subscribed.');">
+                <input type="email" placeholder="Your email address" required aria-label="Email address">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+</main>
+
+<!-- ——— FOOTER ——— -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <span class="logo-mark">Gilded <span>Room</span> Theory</span>
+                <p>An independent editorial publication about interior design, architecture, and the art of living well within built space. Founded 2019. Published in London and New York.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Sections</h4>
+                <ul>
+                    <li><a href="categories.html">Interior Design</a></li>
+                    <li><a href="categories.html">Architecture</a></li>
+                    <li><a href="categories.html">Materials</a></li>
+                    <li><a href="categories.html">Lighting</a></li>
+                    <li><a href="categories.html">Guides</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>About</h4>
+                <ul>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Use</a></li>
+                    <li><a href="cookies.html">Cookie Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow</h4>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Pinterest</a></li>
+                    <li><a href="#">Newsletter</a></li>
+                    <li><a href="#">RSS</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 Gilded Room Theory. All rights reserved.</span>
+            <span>Made with attention to materials.</span>
+        </div>
+    </div>
+</footer>
+
+<!-- ——— JAVASCRIPT ——— -->
+<script>
+    // ——— SEARCH ———
+    const searchToggle = document.getElementById('searchToggle');
+    const searchOverlay = document.getElementById('searchOverlay');
+    const searchClose = document.getElementById('searchClose');
+    const searchInput = document.getElementById('searchInput');
+    const searchResults = document.getElementById('searchResults');
+
+    // Build a simple index from article titles and excerpts
+    const searchIndex = [
+        { title: 'The Honest Wall: Why Materials Matter More Than Ever', cat: 'Materials', url: 'index.html#featured-full' },
+        { title: 'The 80-Centimeter Rule: Circulation in Small Homes', cat: 'Space Planning', url: 'index.html#article-space' },
+        { title: 'Layered Light: Why One Ceiling Fixture Is Never Enough', cat: 'Lighting', url: 'index.html#article-light' },
+        { title: 'Prairie Horizontals: Robie House Reconsidered', cat: 'Architecture', url: 'index.html#article-prairie' },
+        { title: 'The Case for Reclaimed Timber', cat: 'Materials', url: 'index.html#article-timber' },
+        { title: 'The Bedroom Is Not a Hotel Room', cat: 'Interiors', url: 'index.html#article-bedroom' },
+        { title: 'Renovation Without Regret: A Checklist', cat: 'Guides', url: 'index.html#article-renovation' },
+        { title: 'The Glass House Problem: Farnsworth House', cat: 'Architecture', url: 'index.html#article-farnsworth' },
+        { title: 'About Gilded Room Theory', cat: 'About', url: 'about.html' }
+    ];
+
+    searchToggle.addEventListener('click', () => {
+        searchOverlay.classList.add('active');
+        searchInput.focus();
+    });
+
+    searchClose.addEventListener('click', () => {
+        searchOverlay.classList.remove('active');
+        searchInput.value = '';
+        searchResults.innerHTML = '';
+    });
+
+    searchOverlay.addEventListener('click', (e) => {
+        if (e.target === searchOverlay) {
+            searchOverlay.classList.remove('active');
+        }
+    });
+
+    searchInput.addEventListener('input', function() {
+        const q = this.value.toLowerCase().trim();
+        searchResults.innerHTML = '';
+        if (q.length < 2) return;
+        const matches = searchIndex.filter(item =>
+            item.title.toLowerCase().includes(q) || item.cat.toLowerCase().includes(q)
+        );
+        if (matches.length === 0) {
+            searchResults.innerHTML = '<li style="color: var(--ink-muted);">No results found.</li>';
+            return;
+        }
+        matches.slice(0, 8).forEach(item => {
+            const li = document.createElement('li');
+            li.innerHTML = `<a href="${item.url}">${item.title}</a><div class="result-meta">${item.cat}</div>`;
+            searchResults.appendChild(li);
+        });
+    });
+
+    // Close search on Escape
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && searchOverlay.classList.contains('active')) {
+            searchOverlay.classList.remove('active');
+            searchInput.value = '';
+            searchResults.innerHTML = '';
+        }
+    });
+
+    // ——— SMOOTH ANCHOR WITH HEADER OFFSET ———
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            const target = document.querySelector(targetId);
+            if (target) {
+                e.preventDefault();
+                const offset = 80;
+                const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+                window.scrollTo({ top, behavior: 'smooth' });
+                searchOverlay.classList.remove('active');
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
